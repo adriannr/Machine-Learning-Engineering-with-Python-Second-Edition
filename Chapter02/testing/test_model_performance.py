@@ -17,7 +17,7 @@ def test_dataset() -> Union[np.array, np.array]:
     # create an array of True for 2 and False otherwise
     y = y == 2
     # Train and test split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+    _, X_test, _, y_test = train_test_split(X, y, random_state=42)
     return X_test, y_test
 
 @pytest.fixture
