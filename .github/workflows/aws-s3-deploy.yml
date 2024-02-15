@@ -20,6 +20,6 @@ jobs:
       - name: Copy files to bucket with the AWS CLI
         run: |
           aws s3 cp Chapter05/mlewp2-airflow/mwaa-example/dags s3://mlewp2-airflow
-          --recursive--include "*.py"
+          --recursive --include "*.py"
 
 
