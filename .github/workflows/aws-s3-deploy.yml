@@ -19,6 +19,6 @@ jobs:
           aws-region: eu-north-1
       - name: Copy files to bucket with the AWS CLI
         run: |
-          aws s3 cp Chapter05/mlewp2-airflow/mwaa-example/dags s3://mlewp2-airflow --recursive --include "*.py"
+          aws s3 cp Chapter05/mlewp2-airflow/mwaa-example/dags s3://mlewp2-airflow/dags --recursive --include "*.py"
 
 
