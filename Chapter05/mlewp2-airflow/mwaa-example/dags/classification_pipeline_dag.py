@@ -47,8 +47,8 @@ def persist_model():
 
 with DAG(
     dag_id="classification_pipeline",
-    start_date=datetime.datetime(2024, 2, 15),
-    schedule_interval="39 12 * * *",
+    start_date=datetime.datetime(2024, 2, 14),
+    schedule_interval="50 12 * * *",
     catchup=False,
 ) as dag:
 
